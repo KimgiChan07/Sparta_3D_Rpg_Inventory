@@ -18,7 +18,7 @@ public class UIItemInfo : MonoBehaviour
             return;
         }
         
-        itemName.text = _item.name;
+        itemName.text = _item.ItemName;
         description.text = _item.Description;
         itemStat.text = $"<color=red>+ATK {_item.Attack}</color> " +
                         $"/ <color=blue>+DEF {_item.Defence}</color> " +

@@ -18,7 +18,7 @@ public class ItemSlot : MonoBehaviour
     public void SetItem(ItemData _itemData)
     {
         itemData = _itemData;
-        Debug.Log(itemData.Name);
+        Debug.Log(itemData.ItemName);
         UpdateUI();
     }
 

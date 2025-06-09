@@ -21,7 +21,7 @@ public enum PartsType
 public class ItemData : ScriptableObject
 {
     [Header("아이템 기본설정")]
-    public string Name;
+    public string ItemName;
     public string Description;
     public Sprite Icon;
     
