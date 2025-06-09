@@ -59,7 +59,7 @@ public class ItemDataCreatorEditor : EditorWindow
     {
         ItemData newItem = CreateInstance<ItemData>();
         newItem.name = itemName;
-        newItem.Name = itemName;
+        newItem.ItemName = itemName;
         newItem.Icon = icon;
         newItem.Type = itemType;
         
@@ -128,7 +128,7 @@ public class ItemDataCreatorEditor : EditorWindow
             Directory.CreateDirectory(jsonFolderPath);
         }
         
-        File.WriteAllText($"{jsonFolderPath}/{_itemData.Name}.json", json);
+        File.WriteAllText($"{jsonFolderPath}/{_itemData.ItemName}.json", json);
         
         AssetDatabase.Refresh();
     }

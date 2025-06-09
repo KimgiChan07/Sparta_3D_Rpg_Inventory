@@ -22,7 +22,15 @@ public class InventoryManager : MonoBehaviour
 
     public bool IsItemEquipped(ItemData _item)
     {
-        if (_item == null || _item.PartsType == PartsType.Nothing) return false;
+        if (_item == null ) return false;
+
+        if (_item.Type == ItemType.Armor)
+        {
+            if (_item.PartsType == PartsType.Nothing)
+            {
+                return false;
+            }
+        }
 
         return equipParts.TryGetValue(_item.PartsType, out var equipped) && equipped == _item;
     }
@@ -30,7 +38,10 @@ public class InventoryManager : MonoBehaviour
     public void EquipItem(ItemData _item)
     {
         if (!_item.IsEquipableType) return;
-        if (_item.PartsType == PartsType.Nothing) return;
+        if (_item.Type == ItemType.Armor)
+        {
+            if (_item.PartsType == PartsType.Nothing) return;
+        }
 
         if (equipParts.TryGetValue(_item.PartsType,  out var oldEquippedItem))
         {
@@ -49,8 +60,13 @@ public class InventoryManager : MonoBehaviour
 
     public void UnequipItem(ItemData _item)
     {
-        if (_item == null || _item.PartsType == PartsType.Nothing) return;
-
+        if (_item == null) return;
+        
+        if (_item.Type == ItemType.Armor)
+        {
+            if (_item.PartsType == PartsType.Nothing) return;
+        }
+        
         if (equipParts.ContainsKey(_item.PartsType) && equipParts[_item.PartsType] == _item)
         {
             equipParts.Remove(_item.PartsType);
