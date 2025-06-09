@@ -12,11 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a90a87875d2f7478f328882903fa72, type: 3}
   m_Name: kl;mlkn
   m_EditorClassIdentifier: 
-  Name: kl;mlkn
+  ItemName: "\uB0A1\uC740\uC637"
+  Description: "\uB098\uBB34\uBC29\uD328\uC774\uB2E4"
   Icon: {fileID: 0}
-  Type: 0
+  Type: 1
+  PartsType: 2
   IsEquipableType: 1
   Attack: 0
-  Defence: 0
-  Health: 0
+  Defence: 50
+  Health: 100
   CriticalChance: 0

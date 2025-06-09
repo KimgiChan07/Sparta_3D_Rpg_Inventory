@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4a90a87875d2f7478f328882903fa72, type: 3}
   m_Name: Soul
   m_EditorClassIdentifier: 
-  Name: Soul
+  ItemName: "\uC601\uD63C"
   Description: "\uC624\uB798\uC804 \uC8FD\uC740 \uB204\uAD70\uAC00\uC758 \uC601\uD63C\uC774\uB2E4."
   Icon: {fileID: 7482667652216324306, guid: d84d47e4bc075c144bf0ae4613ca54cb, type: 3}
   Type: 0
