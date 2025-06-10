@@ -1,9 +1,7 @@
 using System;
-using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 
-[System.Serializable]
+[Serializable] // 데이터이다. (직렬화가능하다)
 public class Character
 {
     public string name { get; private set; }

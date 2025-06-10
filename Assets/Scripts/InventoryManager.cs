@@ -73,7 +73,6 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-
     public float GetAttackValue()
     {
         float totalAtk = GameManager.Instance.characters.curAttack;
@@ -114,7 +113,7 @@ public class InventoryManager : MonoBehaviour
         {
             totalCritical += item.CriticalChance;
         }
-
+        
         return totalCritical;
     }
 }
