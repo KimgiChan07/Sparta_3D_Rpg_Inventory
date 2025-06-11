@@ -51,8 +51,6 @@ Sparta_3D_Rpg_Inventory-main/
 3. 인벤토리 UI 열기 → 아이템 추가/장착 확인
 
 
-> 또는 GitHub Release에 실행 파일 첨부 가능
-
 ## 🧱 개발 환경
 
 - Unity 2021.3 이상 권장
